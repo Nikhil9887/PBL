@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase Email/Password Authentication</title>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Import the Firebase initialization code snippet -->
+    <!-- <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyCxmuZWnN3WHT8OdiUMmDrzfcOk2wKtaIs",
+        authDomain: "pbl-attendance.firebaseapp.com",
+        projectId: "pbl-attendance",
+        storageBucket: "pbl-attendance.appspot.com",
+        messagingSenderId: "708100114012",
+        appId: "1:708100114012:web:70361b8ea9ffc44c1ac899"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script> -->
+
+    <style>
+      /* Add some basic styles to the login form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      label, input {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Firebase Email/Password Authentication</h1>
+    <form id="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Log In">
+    </form>
+    
+    <!-- Import the JavaScript code snippet for handling the form submit -->
+    <script src="script.js"></script>
+  </body>
+</html>
